@@ -11,7 +11,7 @@ var http = require('http'),
 * Create an express server to return the static files with the right content type.
 */
 var proxyApp = httpProxy.createProxyServer({ ws: true }),
-	host = 'http://138.68.21.186:1880',
+	host = 'http://localhost:1880',
 	app = express();
 
 app.use(express.static('public'));
@@ -51,4 +51,4 @@ function receiveError(err) {
 }
 
 //Start the server
-server.listen(3000);
+server.listen(80);
