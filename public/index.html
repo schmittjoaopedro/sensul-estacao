@@ -12,7 +12,6 @@
   
     <script src="libraries/jquery/jquery.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libraries/chartjs/chartjs.js"></script>
     <script src="libraries/angular/angular.js"></script>
     <script src="app/app.js"></script>
 
@@ -31,38 +30,50 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="panel panel-default">
             <div class="media">
               <div class="media-left img-content">
-                <img class="media-object" src="imgs/temp.png" alt="...">
+                <img class="media-object img-sensor" src="imgs/temp.png" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.temperature}}</nav>
+                <nav>{{data.t}} °C</nav>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="panel panel-default">
             <div class="media">
               <div class="media-left img-content">
-                <img class="media-object" src="imgs/hum.svg" alt="...">
+                <img class="media-object img-sensor" src="imgs/hum.svg" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.humidity}}</nav>
+                <nav>{{data.h}} %</nav>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
            <div class="panel panel-default">
             <div class="media">
               <div class="media-left img-content">
-                <img class="media-object" src="imgs/uv.png" alt="...">
+                <img class="media-object img-sensor" src="imgs/uv.png" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.uv}}</nav>
+                <nav>{{data.u}} UV</nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+           <div class="panel panel-default">
+            <div class="media">
+              <div class="media-left img-content">
+                <img class="media-object img-sensor" src="imgs/pres.png" alt="...">
+              </div>
+              <div class="media-body sensor-test">
+                <nav>{{data.p}} PA</nav>
               </div>
             </div>
           </div>
