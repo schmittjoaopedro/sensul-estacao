@@ -51,4 +51,4 @@ function receiveError(err) {
 }
 
 //Start the server
-server.listen(8080);
+server.listen(80);
