@@ -4,31 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
     <title>Sensoriamento</title>
-  
+
     <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
-  
-    <script src="libraries/jquery/jquery.js"></script>
-    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libraries/angular/angular.js"></script>
-    <script src="app/app.js"></script>
-
   </head>
 
-  <body ng-controller="WeatherController"
-        ng-cloak>
-    
-    <h2>Sistema de Coleta</h2>
-    <hr>
-
+  <body ng-controller="WeatherController" ng-cloak>
     <div class="container-fluid">
-      <div class="row">
-        <div class="jumbotron col-md-12">
-          <p>Sistema de monitoramento da estação climática em tempo real. Os dados exibidos são coletados da estação de coleta Joinvile-Est-01.</p>
-        </div>
-      </div>
+      <h2>Sistema de coleta</h2>
+      <hr>
       <div class="row">
         <div class="col-md-3">
           <div class="panel panel-default">
@@ -78,9 +64,14 @@
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
-
+    <footer class="footer">
+      <div class="container text-center">
+        <p class="text-muted">www.sensul.com.br</p>
+      </div>
+    </footer>
+    <script src="libraries/angular/angular.js"></script>
+    <script src="app/app.js"></script>
   </body>
-
 </html>

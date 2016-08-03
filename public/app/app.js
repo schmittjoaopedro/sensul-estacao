@@ -1,7 +1,7 @@
 var weatherApp = angular.module('weatherApp', []);
 
 weatherApp.controller('WeatherController', function WeatherController($scope) {
-  
+
   $scope.ws = new WebSocket("ws://" + window.location.host + "/resources/ws/sensor");
 
   $scope.ws.onopen = function (ev) {
@@ -26,7 +26,9 @@ weatherApp.controller('WeatherController', function WeatherController($scope) {
   $scope.updateData = function (payload) {
     console.info(payload);
     $scope.data = payload;
-    $scope.$apply();
+    if(!$scope.$$phase){
+      $scope.$apply();
+    }
   }
 
 });
