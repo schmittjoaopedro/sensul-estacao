@@ -1,0 +1,75 @@
+<html ng-app="weatherApp">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Sensoriamento</title>
+  
+    <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+  
+    <script src="libraries/jquery/jquery.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libraries/chartjs/chartjs.js"></script>
+    <script src="libraries/angular/angular.js"></script>
+    <script src="app/app.js"></script>
+
+  </head>
+
+  <body ng-controller="WeatherController"
+        ng-cloak>
+    
+    <h2>Sistema de Coleta</h2>
+    <hr>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="jumbotron col-md-12">
+          <p>Sistema de monitoramento da estação climática em tempo real. Os dados exibidos são coletados da estação de coleta Joinvile-Est-01.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="media">
+              <div class="media-left img-content">
+                <img class="media-object" src="imgs/temp.png" alt="...">
+              </div>
+              <div class="media-body sensor-test">
+                <nav>{{data.temperature}}</nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="media">
+              <div class="media-left img-content">
+                <img class="media-object" src="imgs/hum.svg" alt="...">
+              </div>
+              <div class="media-body sensor-test">
+                <nav>{{data.humidity}}</nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+           <div class="panel panel-default">
+            <div class="media">
+              <div class="media-left img-content">
+                <img class="media-object" src="imgs/uv.png" alt="...">
+              </div>
+              <div class="media-body sensor-test">
+                <nav>{{data.uv}}</nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+  </body>
+
+</html>

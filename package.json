@@ -1,0 +1,8 @@
+{
+  "name": "sensul-location",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "http-proxy": "latest"
+  }
+}
