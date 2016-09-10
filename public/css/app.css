@@ -29,3 +29,11 @@
 .container .text-muted {
   margin: 20px 0;
 }
+
+.info-measure {
+  font-size: 50px;
+}
+
+.nav-measure {
+  margin-top: -20px;
+}

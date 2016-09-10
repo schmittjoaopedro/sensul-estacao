@@ -23,7 +23,7 @@
                 <img class="media-object img-sensor" src="imgs/temp.png" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.t}} °C</nav>
+                <nav class="nav-measure"><span class="info-measure">{{data.t || '28'}}</span> °C</nav>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@
                 <img class="media-object img-sensor" src="imgs/hum.svg" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.h}} %</nav>
+                <nav class="nav-measure"><span class="info-measure">{{data.h || '64' }}</span> %</nav>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
                 <img class="media-object img-sensor" src="imgs/uv.png" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.u}} UV</nav>
+                <nav class="nav-measure"><span class="info-measure">{{data.u || '3' }}</span> UV</nav>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
                 <img class="media-object img-sensor" src="imgs/pres.png" alt="...">
               </div>
               <div class="media-body sensor-test">
-                <nav>{{data.p}} PA</nav>
+                <nav class="nav-measure"><span class="info-measure">{{data.p || '92443'}}</span> PA</nav>
               </div>
             </div>
           </div>
